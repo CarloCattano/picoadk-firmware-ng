@@ -4,3 +4,6 @@
 [submodule "core/lib/tlsf"]
 	path = core/lib/tlsf
 	url = https://github.com/earlephilhower/tlsf.git
+[submodule "core/lib/libpd"]
+	path = core/lib/libpd
+	url = git@github.com:carlocattano/libpd.git

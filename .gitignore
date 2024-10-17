@@ -4,3 +4,7 @@ build/*
 *.elf
 *.map
 .vscode
+*.o
+*.so
+*.a
+

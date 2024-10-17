@@ -9,6 +9,7 @@ include(cmake/pico_sdk_import.cmake)
 include(cmake/pico_extras_import_optional.cmake)
 include(cmake/freertos_import.cmake)
 include(cmake/git_vars.cmake)
+include(cmake/libpd.cmake)
 
 include(project_config.cmake)
 
@@ -48,7 +49,7 @@ add_executable(${PROJECT_NAME}
 )
 
 # Add the standard library to the build
-target_link_libraries(${PROJECT_NAME} pico_stdlib)
+target_link_libraries(${PROJECT_NAME} libpd)
 
 # Base libraries
 target_link_libraries(${PROJECT_NAME}
