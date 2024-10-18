@@ -9,7 +9,9 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include
                     ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd
-                    ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd/cpp)
+                    ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd/cpp
+                    ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd/libpd_wrapper
+)
 
 set_target_properties(libpd PROPERTIES
     ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"

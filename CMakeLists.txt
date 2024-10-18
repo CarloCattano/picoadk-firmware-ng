@@ -20,7 +20,6 @@ file(WRITE "${CMAKE_BINARY_DIR}/project_name.txt" "${PROJECT_NAME}")
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
-
 if (PICO_SDK_VERSION_STRING VERSION_LESS "2.0.0")
     message(FATAL_ERROR "Raspberry Pi Pico SDK version 2.0.0 (or later) required. Your version is ${PICO_SDK_VERSION_STRING}")
 endif()
@@ -42,10 +41,12 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/core/include
     ${CMAKE_CURRENT_SOURCE_DIR}/include
     ${CMAKE_CURRENT_BINARY_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd
-    ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd/samples/cpp/pdtest/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd/cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd/libpd_wrapper
     ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd/pure-data/src
-    ".")
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/lib/libpd/samples/cpp/pdtest/src
+    "."
+)
 
 add_executable(${PROJECT_NAME}
     src/main.cpp
@@ -56,40 +57,41 @@ target_link_libraries(${PROJECT_NAME} libpd)
 
 # Base libraries
 target_link_libraries(${PROJECT_NAME}
-        hardware_adc
-        hardware_spi
-        hardware_i2c
-        hardware_dma
-        hardware_pio
-        hardware_interp
-        hardware_timer
-        hardware_watchdog
-        hardware_clocks
-        pico_unique_id
-        pico_bootsel_via_double_reset
-        pico_util_buffer
-        pico_multicore
-        pico_stdio_uart
-        hardware_sync_spin_lock
-        hardware_sync
+    hardware_adc
+    hardware_spi
+    hardware_i2c
+    hardware_dma
+    hardware_pio
+    hardware_interp
+    hardware_timer
+    hardware_watchdog
+    hardware_clocks
+    pico_unique_id
+    pico_bootsel_via_double_reset
+    pico_util_buffer
+    pico_multicore
+    pico_stdio_uart
+    hardware_sync_spin_lock
+    hardware_sync
+    libpd
 )
 
 # Check if USB_MODE_PICOSDK is defined
-if(NOT USB_MODE_PICOSDK)
+if (NOT USB_MODE_PICOSDK)
     target_link_libraries(${PROJECT_NAME}
         tinyusb_device
         tinyusb_board
     )
 endif()
 
-if(ENABLE_AUDIO_I2S)
+if (ENABLE_AUDIO_I2S)
     add_subdirectory(core/lib/audio)
     target_link_libraries(${PROJECT_NAME} Audio)
     target_include_directories(${PROJECT_NAME} PRIVATE core/lib/audio/include)
     target_sources(${PROJECT_NAME} PRIVATE src/audio_dsp.cpp)
 endif()
 
-if(ENABLE_FREERTOS)
+if (ENABLE_FREERTOS)
     target_link_libraries(${PROJECT_NAME} FreeRTOS)
 endif()
 
@@ -111,9 +113,9 @@ target_link_options(${PROJECT_NAME} PRIVATE
         -Xlinker --print-memory-usage
 )
 
-if(USE_PSRAM)
+if (USE_PSRAM)
     message(WARNING "Careful, using PSRAM support for RP2350. This is experimental and may not work as expected.")
-	target_compile_definitions(${PROJECT_NAME} PRIVATE
+    target_compile_definitions(${PROJECT_NAME} PRIVATE
         RP2350_CS_PIN=${RP2350_CS_PIN}
     )
 
