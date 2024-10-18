@@ -1,0 +1,5 @@
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm-install/pioasm/pioasm
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm-install/pioasm/pioasmTargets.cmake
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm-install/pioasm/pioasmTargets-release.cmake
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm-install/pioasm/pioasmConfig.cmake
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm-install/pioasm/pioasmConfigVersion.cmake

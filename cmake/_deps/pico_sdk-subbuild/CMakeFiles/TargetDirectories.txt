@@ -1,0 +1,3 @@
+/home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-subbuild/CMakeFiles/pico_sdk-populate.dir
+/home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-subbuild/CMakeFiles/edit_cache.dir
+/home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-subbuild/CMakeFiles/rebuild_cache.dir

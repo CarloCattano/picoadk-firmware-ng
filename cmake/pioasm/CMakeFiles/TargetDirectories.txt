@@ -1,0 +1,7 @@
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm/CMakeFiles/pioasm.dir
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm/CMakeFiles/edit_cache.dir
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm/CMakeFiles/rebuild_cache.dir
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm/CMakeFiles/list_install_components.dir
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm/CMakeFiles/install.dir
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm/CMakeFiles/install/local.dir
+/home/carlo/dev/picoadk-firmware-ng/cmake/pioasm/CMakeFiles/install/strip.dir

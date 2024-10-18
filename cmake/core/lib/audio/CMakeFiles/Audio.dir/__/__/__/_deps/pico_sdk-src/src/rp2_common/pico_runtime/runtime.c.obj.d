@@ -1,0 +1,35 @@
+core/lib/audio/CMakeFiles/Audio.dir/__/__/__/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c.obj: \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2_common/pico_runtime/runtime.c \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2_common/pico_runtime/include/pico/runtime.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/common/pico_base_headers/include/pico.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/common/pico_base_headers/include/pico/types.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/common/pico_base_headers/include/pico/assert.h \
+ /usr/lib/gcc/arm-none-eabi/14.1.0/include/stdbool.h \
+ /usr/arm-none-eabi/include/assert.h /usr/arm-none-eabi/include/_ansi.h \
+ /usr/arm-none-eabi/include/newlib.h \
+ /usr/arm-none-eabi/include/_newlib_version.h \
+ /usr/arm-none-eabi/include/sys/config.h \
+ /usr/arm-none-eabi/include/machine/ieeefp.h \
+ /usr/arm-none-eabi/include/sys/features.h \
+ /usr/lib/gcc/arm-none-eabi/14.1.0/include/stdint.h \
+ /usr/arm-none-eabi/include/stdint.h \
+ /usr/arm-none-eabi/include/machine/_default_types.h \
+ /usr/arm-none-eabi/include/sys/_intsup.h \
+ /usr/arm-none-eabi/include/sys/_stdint.h \
+ /usr/lib/gcc/arm-none-eabi/14.1.0/include/stddef.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/generated/pico_base/pico/version.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/common/pico_base_headers/include/pico/config.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/generated/pico_base/pico/config_autogen.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/boards/include/boards/pico2.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2350/pico_platform/include/pico/platform.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
+ /usr/arm-none-eabi/include/sys/cdefs.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/common/pico_base_headers/include/pico/types.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2350/hardware_regs/include/hardware/regs/addressmap.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2350/hardware_regs/include/hardware/regs/sio.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/common/pico_base_headers/include/pico/error.h \
+ /home/carlo/dev/picoadk-firmware-ng/cmake/_deps/pico_sdk-src/src/rp2_common/pico_runtime_init/include/pico/runtime_init.h
